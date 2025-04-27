@@ -1,46 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>My Site</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <style>
-    body,
-    h1 {
-      font-family: "Raleway", sans-serif
-    }
-
-    body,
-    html {
-      height: 100%
-    }
-
-    .bgimg {
-      background-image: url('https://plus.unsplash.com/premium_vector-1742937655792-e857a91dc94f?q=80&w=1992&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longnguvl's Portfolio (perhaps)</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Add Tailwind CSS CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Optional: You can add custom fonts if you need */
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      Anime
-    </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-      <p class="w3-large w3-center">10 days left</p>
-    </div>
-  </div>
-  <div class="flex flex-row justify-center items-center p-12">
-    <h1 class="text-5xl text-green-300 animate-bounce">Hello, Tailwind CSS</h1>
-  </div>
-  <script type="module" src="/src/scripts/application.js"></script>
+<body class="bg-gray-50">
+
+    <!-- Header Section -->
+    <header class="bg-blue-500 text-white py-6">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-3xl font-semibold">Longnguvl</h1>
+            <nav>
+                <ul class="flex flex-col sm:flex-row space-x-0 sm:space-x-6 sm:space-y-0 space-y-6">
+                    <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                    <li><a href="#contact" class="hover:text-gray-300">Contact(?)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-screen" style="background-image: url('https://plus.unsplash.com/premium_vector-1742937655792-e857a91dc94f?q=80&w=1992&auto=format&fit=crop');">
+        <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Dark overlay -->
+        <div class="container mx-auto h-full flex items-center justify-center text-center text-white">
+            <div>
+                <h2 class="text-4xl sm:text-5xl font-bold mb-4">Welcome to My Portfolio</h2>
+                <p class="text-xl">I am the storm that is approaching.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-teal-400 min-h-screen w-full flex flex-col justify-center items-center p-4 lg:p-12 text-white">
+        <div class="w-full lg:w-[60%] mb-5">
+            <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+            <p class="text-lg max-w-2xl mx-auto mb-4">Hi, this page is under development, have a Longnguvl while you wait for the finished page. </p>
+            <p class="text-lg max-w-2xl mx-auto">I enjoy watching Anime.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-40 px-6 bg-blue-500 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Don't mind me</h2>
+            <p class="text-lg mb-8">Feel free to ignore me.</p>
+            <a href="mailto:longnguyen220201@vnuk.edu.vn" class="bg-white text-blue-500 py-3 px-6 rounded-full hover:bg-gray-200 max-w-xs mx-auto">Ignore Me</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-24 text-center">
+        <p>&copy; 2025 Longnguvl. All rights reserved.</p>
+    </footer>
+
 </body>
+
 </html>
